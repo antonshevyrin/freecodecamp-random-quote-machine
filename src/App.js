@@ -12,16 +12,9 @@ class App extends Component {
           <h2>Random Quote Machine</h2>
         </div>
         <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-            <FontAwesome className="fa-camera-retro" name="camera"/>
-
-            <FontAwesome
-                className='super-crazy-colors'
-                name='rocket'
-                size='2x'
-                spin
-                style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}
-            />
+            <FontAwesome className="fa-quote-left" name="leftQuote"/>
+            &nbsp;This is some quote.&nbsp;
+            <FontAwesome className="fa-quote-right" name="rightQuote"/>
         </p>
       </div>
     );
