@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import FontAwesome from 'react-fontawesome';
+import StaticQuote from './quotes/StaticQuote';
 
 class App extends Component {
   render() {
@@ -13,7 +14,9 @@ class App extends Component {
         </div>
         <p className="App-intro">
             <FontAwesome className="fa-quote-left" name="leftQuote"/>
-            &nbsp;This is some quote.&nbsp;
+            &nbsp;
+            <StaticQuote/>
+            &nbsp;
             <FontAwesome className="fa-quote-right" name="rightQuote"/>
         </p>
       </div>
