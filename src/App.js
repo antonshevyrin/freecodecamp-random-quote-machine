@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import FontAwesome from 'react-fontawesome';
-import StaticQuote from './quotes/StaticQuote';
+import Quote from './Quote';
 
 class App extends Component {
   render() {
@@ -15,7 +14,7 @@ class App extends Component {
         <p className="App-intro">
             <FontAwesome className="fa-quote-left" name="leftQuote"/>
             &nbsp;
-            <StaticQuote/>
+            <Quote/>
             &nbsp;
             <FontAwesome className="fa-quote-right" name="rightQuote"/>
         </p>
