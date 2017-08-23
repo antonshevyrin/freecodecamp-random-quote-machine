@@ -15,7 +15,7 @@ class Quote extends Component {
   }
 
   componentDidMount() {
-    this.request = axios.get('/quotes.json').then((result) => {
+    this.request = axios.get('./quotes.json').then((result) => {
       this.setState({
         quotesAreLoaded: true,
         availableQuotes: result.data.quotes,
