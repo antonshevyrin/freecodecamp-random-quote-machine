@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import FontAwesome from 'react-fontawesome';
+import './Quote.css';
 
 class Quote extends Component {
   constructor(props) {
@@ -36,7 +38,16 @@ class Quote extends Component {
 
   render() {
     return (
-      <span>Some static quote - {this.state.quoteText}</span>
+      <div className="Quote">
+        <blockquote className="blockquote mb-0">
+          <p>
+            <FontAwesome className="fa-quote-left" name="leftQuote" />&nbsp;
+            {this.state.quoteText}&nbsp;
+            <FontAwesome className="fa-quote-right" name="rightQuote" />
+          </p>
+          <footer className="blockquote-footer">{this.state.quoteAuthor}</footer>
+        </blockquote>
+      </div>
     );
   }
 }
