@@ -4,11 +4,11 @@ import Quote from './Quote';
 
 /* eslint-disable react/prefer-stateless-function */
 class App extends Component {
-  render() {
-    return (<div className="App">
-      <Quote />
-    </div>);
-  }
+	render() {
+		return (<div className="App">
+			<Quote />
+		</div>);
+	}
 }
 
 export default App;
