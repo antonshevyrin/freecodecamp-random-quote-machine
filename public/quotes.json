@@ -1,12 +1,12 @@
 {
-  "quotes":[
-    {
-      "quoteText": "First quote. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "quoteAuthor": "First Author"
-    },
-    {
-      "quoteText": "Second quote. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "quoteAuthor": "Second Author"
-    }
-  ]
+	"quotes": [
+		{
+			"quoteText": "First quote. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+			"quoteAuthor": "First Author"
+		},
+		{
+			"quoteText": "Second quote. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+			"quoteAuthor": "Second Author"
+		}
+	]
 }
