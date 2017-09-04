@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import FontAwesome from 'react-fontawesome';
 import './App.css';
 import Quote from './Quote';
 
@@ -40,9 +41,21 @@ class App extends Component {
 	}
 
 	render() {
-		return (<div className="App">
-			<Quote quoteText={this.state.quoteText} quoteAuthor={this.state.quoteAuthor} />
-			<button onClick={this.setRandomQuote}>New quote</button>
+		return (<div className="App container">
+			<div className="Quote">
+				<Quote quoteText={this.state.quoteText} quoteAuthor={this.state.quoteAuthor} />
+				<div className="Controls">
+					<button id="NewQuoteButton" className="btn btn-default" onClick={this.setRandomQuote}>
+						<FontAwesome className="fa-refresh" />&nbsp;New quote
+					</button>
+					<button id="CopyButton" className="btn btn-default">
+						<FontAwesome className="fa-clipboard" />&nbsp;Copy
+					</button>
+					<button id="TweetOutButton" className="btn btn-default">
+						<FontAwesome className="fa-twitter" />&nbsp;Tweet out
+					</button>
+				</div>
+			</div>
 		</div>);
 	}
 }
