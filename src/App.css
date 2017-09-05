@@ -1,22 +1,27 @@
 .App {
 	padding: 2em;
+	justify-content: center;
+	display: flex;
 }
 
 .Quote {
 	padding: 2em;
 	border: solid 1px black;
 	border-radius: 0.5em;
-	width: 30em;
+	width: 40em;
+	height: 20em;
 	background: white;
+	position: relative;
 }
 
 .Controls {
-	padding-top: 1em;
+	position: absolute;
 	display: flex;
 	justify-content: space-between;
+	padding: 2em;
 }
 
-.btn:focus {
+.btn-default:focus {
 	background: inherit;
 	outline: none;
 }
