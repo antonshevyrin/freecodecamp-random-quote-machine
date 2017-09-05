@@ -11,6 +11,7 @@ class App extends Component {
 		this.state = {
 			quoteText: '',
 			quoteAuthor: '',
+			currentIndex: 0,
 			quotesAreLoaded: false,
 			availableQuotes: [],
 		};
@@ -33,10 +34,18 @@ class App extends Component {
 	}
 
 	setRandomQuote() {
-		const randomIndex = Math.floor(this.state.availableQuotes.length * Math.random());
+		// try to avoid same quote again
+		const maxAttempts = 10;
+		let attempt = 1;
+		let newRandomIndex;
+		do {
+			newRandomIndex = Math.floor(this.state.availableQuotes.length * Math.random());
+			attempt += 1;
+		} while (newRandomIndex === this.currentIndex && attempt <= maxAttempts);
+		this.currentIndex = newRandomIndex;
 		this.setState({
-			quoteText: this.state.availableQuotes[randomIndex].quoteText,
-			quoteAuthor: this.state.availableQuotes[randomIndex].quoteAuthor,
+			quoteText: this.state.availableQuotes[this.currentIndex].quoteText,
+			quoteAuthor: this.state.availableQuotes[this.currentIndex].quoteAuthor,
 		});
 	}
 
@@ -46,14 +55,14 @@ class App extends Component {
 				<Quote quoteText={this.state.quoteText} quoteAuthor={this.state.quoteAuthor} />
 				<div className="Controls navbar-fixed-bottom">
 					<button className="btn btn-default" onClick={this.setRandomQuote}>
-						<FontAwesome className="fa-refresh" />&nbsp;New quote
+						<FontAwesome name="refresh" />&nbsp;New quote
 					</button>
 					<div className="btn-toolbar">
 						<button className="btn btn-default">
-							<FontAwesome className="fa-clipboard" />&nbsp;Copy
+							<FontAwesome name="clipboard" />&nbsp;Copy
 						</button>
 						<button className="btn btn-default">
-							<FontAwesome className="fa-twitter" />&nbsp;Tweet out
+							<FontAwesome name="twitter" />&nbsp;Tweet out
 						</button>
 					</div>
 				</div>

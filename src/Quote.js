@@ -1,21 +1,22 @@
 import React from 'react';
 import FontAwesome from 'react-fontawesome';
+import PropTypes from 'prop-types';
 import './Quote.css';
 
 const Quote = ({ quoteText, quoteAuthor }) => (
 	<blockquote className="blockquote mb-0">
 		<p>
-			<FontAwesome className="fa-quote-left" name="leftQuote" />&nbsp;
+			<FontAwesome name="quote-left" />&nbsp;
 			{quoteText}&nbsp;
-			<FontAwesome className="fa-quote-right" name="rightQuote" />
+			<FontAwesome name="quote-right" />
 		</p>
 		<footer className="blockquote-footer">{quoteAuthor}</footer>
 	</blockquote>
 );
 
 Quote.propTypes = {
-	quoteText: React.PropTypes.string.isRequired,
-	quoteAuthor: React.PropTypes.string.isRequired,
+	quoteText: PropTypes.string.isRequired,
+	quoteAuthor: PropTypes.string.isRequired,
 };
 
 export default Quote;
