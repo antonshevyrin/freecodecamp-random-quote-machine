@@ -1,3 +1,7 @@
 blockquote {
 	margin: 0;
 }
+
+blockquote p .fa {
+	display: inline;
+}
