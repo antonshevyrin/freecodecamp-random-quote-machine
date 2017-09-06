@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import FontAwesome from 'react-fontawesome';
+import CopyToClipboard from 'react-copy-to-clipboard';
 import './App.css';
 import Quote from './Quote';
 
@@ -18,6 +19,9 @@ class App extends Component {
 
 		this.setRandomQuote = this.setRandomQuote.bind(this);
 		this.tweetOut = this.tweetOut.bind(this);
+		this.getCurrentFullQuote = this.getCurrentFullQuote.bind(this);
+		this.getCurrentQuoteText = this.getCurrentQuoteText.bind(this);
+		this.getCurrentQuoteAuthor = this.getCurrentQuoteAuthor.bind(this);
 	}
 
 	componentDidMount() {
@@ -35,11 +39,25 @@ class App extends Component {
 	}
 
 	getCurrentQuoteText() {
-		return this.state.availableQuotes[this.state.currentIndex].quoteText;
+		if (this.state.availableQuotes.length > 0) {
+			return this.state.availableQuotes[this.state.currentIndex].quoteText;
+		}
+
+		return '';
 	}
 
 	getCurrentQuoteAuthor() {
-		return this.state.availableQuotes[this.state.currentIndex].quoteAuthor;
+		if (this.state.availableQuotes.length > 0) {
+			return this.state.availableQuotes[this.state.currentIndex].quoteAuthor;
+		}
+
+		return '';
+	}
+
+	getCurrentFullQuote() {
+		const quoteText = this.getCurrentQuoteText();
+		const quoteAuthor = this.getCurrentQuoteAuthor();
+		return `"${quoteText}" ${quoteAuthor}`;
 	}
 
 	setRandomQuote() {
@@ -59,9 +77,7 @@ class App extends Component {
 	}
 
 	tweetOut() {
-		const quoteText = this.getCurrentQuoteText();
-		const quoteAuthor = this.getCurrentQuoteAuthor();
-		window.open(`https://twitter.com/intent/tweet?text="${quoteText}" ${quoteAuthor}`);
+		window.open(`https://twitter.com/intent/tweet?text=${this.getCurrentFullQuote()}`);
 	}
 
 	render() {
@@ -73,9 +89,11 @@ class App extends Component {
 						<FontAwesome name="refresh" />&nbsp;New quote
 					</button>
 					<div className="btn-toolbar">
-						<button className="btn btn-default">
-							<FontAwesome name="clipboard" />&nbsp;Copy
-						</button>
+						<CopyToClipboard text={this.getCurrentFullQuote()}>
+							<button className="btn btn-default">
+								<FontAwesome name="clipboard" />&nbsp;Copy
+							</button>
+						</CopyToClipboard>
 						<button className="btn btn-default" onClick={this.tweetOut}>
 							<FontAwesome name="twitter" />&nbsp;Tweet out
 						</button>
