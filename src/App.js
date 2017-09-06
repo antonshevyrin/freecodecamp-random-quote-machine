@@ -17,6 +17,7 @@ class App extends Component {
 		};
 
 		this.setRandomQuote = this.setRandomQuote.bind(this);
+		this.tweetOut = this.tweetOut.bind(this);
 	}
 
 	componentDidMount() {
@@ -33,6 +34,14 @@ class App extends Component {
 		this.request.abort();
 	}
 
+	getCurrentQuoteText() {
+		return this.state.availableQuotes[this.state.currentIndex].quoteText;
+	}
+
+	getCurrentQuoteAuthor() {
+		return this.state.availableQuotes[this.state.currentIndex].quoteAuthor;
+	}
+
 	setRandomQuote() {
 		// try to avoid same quote again
 		const maxAttempts = 10;
@@ -42,11 +51,17 @@ class App extends Component {
 			newRandomIndex = Math.floor(this.state.availableQuotes.length * Math.random());
 			attempt += 1;
 		} while (newRandomIndex === this.currentIndex && attempt <= maxAttempts);
-		this.currentIndex = newRandomIndex;
+		this.state.currentIndex = newRandomIndex;
 		this.setState({
-			quoteText: this.state.availableQuotes[this.currentIndex].quoteText,
-			quoteAuthor: this.state.availableQuotes[this.currentIndex].quoteAuthor,
+			quoteText: this.getCurrentQuoteText(),
+			quoteAuthor: this.getCurrentQuoteAuthor(),
 		});
+	}
+
+	tweetOut() {
+		const quoteText = this.getCurrentQuoteText();
+		const quoteAuthor = this.getCurrentQuoteAuthor();
+		window.open(`https://twitter.com/intent/tweet?text="${quoteText}" ${quoteAuthor}`);
 	}
 
 	render() {
@@ -61,7 +76,7 @@ class App extends Component {
 						<button className="btn btn-default">
 							<FontAwesome name="clipboard" />&nbsp;Copy
 						</button>
-						<button className="btn btn-default">
+						<button className="btn btn-default" onClick={this.tweetOut}>
 							<FontAwesome name="twitter" />&nbsp;Tweet out
 						</button>
 					</div>
