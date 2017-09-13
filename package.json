@@ -1,6 +1,6 @@
 {
 	"name": "random-quote-machine",
-	"version": "0.2.0",
+	"version": "1.0.0",
 	"private": true,
 	"dependencies": {
 		"axios": "^0.16.2",
@@ -16,6 +16,7 @@
 	"scripts": {
 		"start": "react-scripts start",
 		"build": "react-scripts build",
+		"deploy" : "npm run build && gh-pages -d build",
 		"eslint": "eslint src"
 	},
 	"devDependencies": {
@@ -23,7 +24,8 @@
 		"eslint-config-airbnb": "^15.1.0",
 		"eslint-plugin-import": "2.7.0",
 		"eslint-plugin-jsx-a11y": "5.1.1",
-		"eslint-plugin-react": "7.1.0"
+		"eslint-plugin-react": "7.1.0",
+		"gh-pages": "^1.0.0"
 	},
-	"homepage": "https://antonshevyrin.github.io/random-quote-machine/"
+	"homepage": "https://antonshevyrin.github.io/freecodecamp-random-quote-machine/"
 }
