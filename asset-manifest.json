@@ -1,16 +1,27 @@
 {
-  "main.css": "static/css/main.8f8048e0.css",
-  "main.css.map": "static/css/main.8f8048e0.css.map",
-  "main.js": "static/js/main.743bd7ba.js",
-  "main.js.map": "static/js/main.743bd7ba.js.map",
-  "static\\media\\fontawesome-webfont.eot?v=4.7.0": "static/media/fontawesome-webfont.674f50d2.eot",
-  "static\\media\\fontawesome-webfont.svg?v=4.7.0": "static/media/fontawesome-webfont.912ec66d.svg",
-  "static\\media\\fontawesome-webfont.ttf?v=4.7.0": "static/media/fontawesome-webfont.b06871f2.ttf",
-  "static\\media\\fontawesome-webfont.woff2?v=4.7.0": "static/media/fontawesome-webfont.af7ae505.woff2",
-  "static\\media\\fontawesome-webfont.woff?v=4.7.0": "static/media/fontawesome-webfont.fee66e71.woff",
-  "static\\media\\glyphicons-halflings-regular.eot": "static/media/glyphicons-halflings-regular.f4769f9b.eot",
-  "static\\media\\glyphicons-halflings-regular.svg": "static/media/glyphicons-halflings-regular.89889688.svg",
-  "static\\media\\glyphicons-halflings-regular.ttf": "static/media/glyphicons-halflings-regular.e18bbf61.ttf",
-  "static\\media\\glyphicons-halflings-regular.woff": "static/media/glyphicons-halflings-regular.fa277232.woff",
-  "static\\media\\glyphicons-halflings-regular.woff2": "static/media/glyphicons-halflings-regular.448c34a5.woff2"
+  "files": {
+    "main.css": "/static/css/main.731ff696.chunk.css",
+    "main.js": "/static/js/main.ad854704.chunk.js",
+    "main.js.map": "/static/js/main.ad854704.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.ec2185de.js",
+    "runtime-main.js.map": "/static/js/runtime-main.ec2185de.js.map",
+    "static/css/2.0887a5c8.chunk.css": "/static/css/2.0887a5c8.chunk.css",
+    "static/js/2.6d4634db.chunk.js": "/static/js/2.6d4634db.chunk.js",
+    "static/js/2.6d4634db.chunk.js.map": "/static/js/2.6d4634db.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.1e252e7ab370f63ac3e07cc1d8b1877e.js": "/precache-manifest.1e252e7ab370f63ac3e07cc1d8b1877e.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.0887a5c8.chunk.css.map": "/static/css/2.0887a5c8.chunk.css.map",
+    "static/css/main.731ff696.chunk.css.map": "/static/css/main.731ff696.chunk.css.map",
+    "static/js/2.6d4634db.chunk.js.LICENSE.txt": "/static/js/2.6d4634db.chunk.js.LICENSE.txt",
+    "static/media/font-awesome.css": "/static/media/fontawesome-webfont.fee66e71.woff",
+    "static/media/bootstrap.css": "/static/media/glyphicons-halflings-regular.fa277232.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ec2185de.js",
+    "static/css/2.0887a5c8.chunk.css",
+    "static/js/2.6d4634db.chunk.js",
+    "static/css/main.731ff696.chunk.css",
+    "static/js/main.ad854704.chunk.js"
+  ]
 }
