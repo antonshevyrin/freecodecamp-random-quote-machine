@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.731ff696.chunk.css",
-    "main.js": "/static/js/main.ad854704.chunk.js",
-    "main.js.map": "/static/js/main.ad854704.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.ec2185de.js",
-    "runtime-main.js.map": "/static/js/runtime-main.ec2185de.js.map",
-    "static/css/2.0887a5c8.chunk.css": "/static/css/2.0887a5c8.chunk.css",
-    "static/js/2.6d4634db.chunk.js": "/static/js/2.6d4634db.chunk.js",
-    "static/js/2.6d4634db.chunk.js.map": "/static/js/2.6d4634db.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.1e252e7ab370f63ac3e07cc1d8b1877e.js": "/precache-manifest.1e252e7ab370f63ac3e07cc1d8b1877e.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.0887a5c8.chunk.css.map": "/static/css/2.0887a5c8.chunk.css.map",
-    "static/css/main.731ff696.chunk.css.map": "/static/css/main.731ff696.chunk.css.map",
-    "static/js/2.6d4634db.chunk.js.LICENSE.txt": "/static/js/2.6d4634db.chunk.js.LICENSE.txt",
-    "static/media/font-awesome.css": "/static/media/fontawesome-webfont.fee66e71.woff",
-    "static/media/bootstrap.css": "/static/media/glyphicons-halflings-regular.fa277232.woff"
+    "main.css": "/freecodecamp-random-quote-machine/static/css/main.731ff696.chunk.css",
+    "main.js": "/freecodecamp-random-quote-machine/static/js/main.4fbcf2a2.chunk.js",
+    "main.js.map": "/freecodecamp-random-quote-machine/static/js/main.4fbcf2a2.chunk.js.map",
+    "runtime-main.js": "/freecodecamp-random-quote-machine/static/js/runtime-main.55e1d981.js",
+    "runtime-main.js.map": "/freecodecamp-random-quote-machine/static/js/runtime-main.55e1d981.js.map",
+    "static/css/2.bb728fb0.chunk.css": "/freecodecamp-random-quote-machine/static/css/2.bb728fb0.chunk.css",
+    "static/js/2.6d4634db.chunk.js": "/freecodecamp-random-quote-machine/static/js/2.6d4634db.chunk.js",
+    "static/js/2.6d4634db.chunk.js.map": "/freecodecamp-random-quote-machine/static/js/2.6d4634db.chunk.js.map",
+    "index.html": "/freecodecamp-random-quote-machine/index.html",
+    "precache-manifest.2d6037daebeb21d1972adc80420c5ee6.js": "/freecodecamp-random-quote-machine/precache-manifest.2d6037daebeb21d1972adc80420c5ee6.js",
+    "service-worker.js": "/freecodecamp-random-quote-machine/service-worker.js",
+    "static/css/2.bb728fb0.chunk.css.map": "/freecodecamp-random-quote-machine/static/css/2.bb728fb0.chunk.css.map",
+    "static/css/main.731ff696.chunk.css.map": "/freecodecamp-random-quote-machine/static/css/main.731ff696.chunk.css.map",
+    "static/js/2.6d4634db.chunk.js.LICENSE.txt": "/freecodecamp-random-quote-machine/static/js/2.6d4634db.chunk.js.LICENSE.txt",
+    "static/media/font-awesome.css": "/freecodecamp-random-quote-machine/static/media/fontawesome-webfont.fee66e71.woff",
+    "static/media/bootstrap.css": "/freecodecamp-random-quote-machine/static/media/glyphicons-halflings-regular.fa277232.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.ec2185de.js",
-    "static/css/2.0887a5c8.chunk.css",
+    "static/js/runtime-main.55e1d981.js",
+    "static/css/2.bb728fb0.chunk.css",
     "static/js/2.6d4634db.chunk.js",
     "static/css/main.731ff696.chunk.css",
-    "static/js/main.ad854704.chunk.js"
+    "static/js/main.4fbcf2a2.chunk.js"
   ]
 }
